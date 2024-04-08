@@ -6,6 +6,5 @@ jobs:
     if: ${{ github.ref == 'refs/heads/main' }}
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Desplegando en la rama $GITHUB_REF"
-      - run: echo "El workflow fue activado por:${{ github.actor }}"
-      - run: echo "El resultado del paso anterior fue:${{ steps.previous_step.outputs.resultado }}"
+      - run: echo "Desplegando en la rama $GITHUB_REF en el repositorio ${{ github.repository }}"
+      
